@@ -1,0 +1,47 @@
+p {
+    border: 1px solid red;
+}
+h1 {
+    border: 1px solid green;
+}
+p, h1 {
+    width: 300px;
+    background-color: grey;
+}
+#first-paragraph {
+    background-color: red;
+}
+.my-content .my-text {
+    text-align: center;
+}
+div:last-child .my-text {
+    color: orange;
+}
+.text-color-blue {
+    color: #1919cf;
+    text-decoration: underline;
+}
+html body div.my-content p.hover-change-color:hover {
+    color: yellow;
+}
+.hover-change-color{
+    color: #160dba;
+    text-decoration: underline;
+}
+.styling-div {
+    font-style: oblique;
+    font-size: 40px;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    text-decoration: line-through;
+    line-height: 30px;
+}
+.test-box div {
+    border: 1px solid #000000;
+    min-width: 400px;
+    max-width: 600px;
+    position: relative;
+    left: 10px;
+    margin: 5px auto;
+    padding: 0 0 0 5px;
+}
