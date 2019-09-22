@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_2</title>
+    <style>
+        #container {
+            border: 2px dotted black;
+            position: relative;
+            min-height: 200px;
+        }
+        #container div {
+            font-size: 30px;
+            background: red;
+            height: 200px;
+            width: 200px;
+            margin-right: 5px;
+            float: left;
+        }
+        #container div:last-child {
+            margin: 0;
+        }
+        #container .color-green {
+            position: relative;
+            top: 40px;
+            left: 40px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>One</div>
+        <div class="color-green">Two</div>
+        <div>Three</div>
+        <div>Four</div>
+    </div>
+</body>
+</html>
