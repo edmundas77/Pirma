@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css3.html</title>
+    <style>
+        div {
+            border: 1px solid red; min-height: 200px; background: grey;
+        }
+        .col-3 {
+            width: 33%;
+        }
+        .col-9 {
+            width: 66%;
+        }
+        .col-12 {
+            width: 100%;
+        }
+        .display-flex {
+            display: flex
+        }
+        @media screen and (max-width: 600px) {
+            .display-flex {
+                flex-direction: column;
+            }
+            .display-flex div {
+                width: 100%;
+            }
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="col-12">top</div>
+        <div class="col-12">header</div>
+        <div class="col-12 display-flex">
+            <div class="col-3">sidebar</div>
+            <div class="col-9">main content</div>
+        </div>
+        <div class="col-12 display-flex">
+            <div class="col-3">sidebar</div>
+            <div class="col-3">sidebar</div>
+            <div class="col-3">sidebar</div>
+
+        </div>
+    </body>
+</html>
