@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>html8</title>
+        <style>
+            .field-of-form {
+                width: 1000px;
+            }
+            #message {
+                width: 700px;
+                height: 100px;
+            }
+            .checbox-language {
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset class="field-of-form">
+            <legend>Jūsų informacija</legend>
+                <form>
+                    <label for="name">Vardas:&nbsp;&nbsp;</label>
+                    <input type="text" id="name" name="vardas"><br><br>
+                    <label for="surname">Pavardė:</label>
+                    <input type="text" id="surname" name="pavardė">
+                </form>
+        </fieldset>
+
+        <fieldset class="field-of-form">
+            <legend>Klausimai</legend>
+                <form>
+                    <label>Kaip sužinojote apie mus?
+                            <select name="source">
+                                <option value="google">Google</option>
+                                <option value="yahoo">Yahoo</option>
+                                <option value="others">Kita</option>
+                            </select>
+                    </label><br><br>
+                    <div>Ar apsilankysite vėl?<br>
+                        <input type="radio" name="yes" value="Taip">Taip
+                        <input type="radio" name="no" value="Ne">Ne
+                        <input type="radio" name="maybe" value="Galbūt">Galbūt
+                    </div><br><br>
+                    <label>Ką manote apie kursą?<br>
+                        <textarea id="message" placeholder="Rašykite viską ką galvojate" ></textarea>
+                    </label><br><br>
+                    <div>Pažymėkite programavimo/žymėjimo kalbas, su kuriomis esate susipažinę:<br>
+                        <span class="checbox-language">
+                            <input type="checkbox" name="language1" value="c#">C#<br>
+                            <input type="checkbox" name="language2" value="html">HTML<br>
+                            <input type="checkbox" name="language3" value="python">Python
+                        </span >
+                        <span class="checbox-language">
+                            <input type="checkbox" name="language4" value="java">JAVA<br>
+                            <input type="checkbox" name="language5" value="css">CSS<br>
+                            <input type="checkbox" name="language6" value="Ruby">Ruby
+                        </span>
+                            <span class="checbox-language">
+                            <input type="checkbox" name="language7" value="php">PHP<br>
+                            <input type="checkbox" name="language8" value="javascript">JavaScript
+                        </span>
+                    </div><br><br><br><br><br>
+                    <input type="submit" value="Siųsti">
+            </form>
+        </fieldset>
+
+    </body>
+</html>
