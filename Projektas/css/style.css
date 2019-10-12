@@ -5,12 +5,13 @@
 ** 3. article
 ** 4. footer
 ** 5. gallery
+** 6. contacts
 
 */
 
 /* 1. reset */
 body {
-    background-color: #ffd9b3;
+    background-color: #ffeecc;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -32,7 +33,7 @@ nav {
     font-size: 20px;
     list-style: none;
     margin: 0;
-    background-color: #4d2600;
+    background-color: #00264d;
 }
 .top-navigation li {
     line-height: 70px;
@@ -43,11 +44,6 @@ nav {
     display: inline-block;
     Width: 365px;
     float: left;
-}
-.top-navigation li:after{
-    content: " | ";
-    height: 300px;
-    margin: 0px;
 }
 .top-navigation li:hover {
     background-color: #c3c388;
@@ -60,25 +56,35 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
+main {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #996633;
+    height: 600px;
+    overflow: auto;
+
+}
+main > * {
+    border: 1px solid red;
+
+}
 h1 {
-    position: absolute;
-    top: 300px;
-    justify-content: center;
+/*    position: absolute;*/
+    top: 600px;
+/*    justify-content: center;*/
     color: white;
     font-size: 70px;
+    margin: 0 200;
 }
 #horse {
-    float: left;
+    float: none;
     padding-top: 5px;
     width: 50%;
     height: 500px;
 }
-#about-us {
-    background-color: #996633;
-    height: 600px;
-    overflow: auto;
-}
-@media screen and (max-width: 900px) {
+
+
+@media screen and (max-width: 800px) {
 ul {
         flex-direction: column;
         width: 100%;
@@ -89,6 +95,7 @@ footer {
     height: 100px;
     background-color: black;
     color: bisque;
+    margin: auto;
 }
 .footer-contacts {
     padding: 0px;
@@ -97,8 +104,12 @@ footer {
     display: inline-block;
     float: left;
 }
+.footer-contacts a {
+    color: antiquewhite;
+}
 .company-details {
     padding: 0px;
+    text-decoration: none;
     width: 50%;
     position: relative;
     display: inline-block;
@@ -123,11 +134,36 @@ footer {
   margin: 10px 5px;
 }
 .column {
-  width: 33.3%;
   float: left;
+  width: 33.3%;
 }
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+/* 6. contacts */
+.arrival-information {
+    background: #f8f3ea;
+    border: 10px solid #ffeecc;
+    width: auto;
+    padding: 30px;
+    justify-content: center;
+}
+.arrival-information > * {
+    text-align: center;
+    font-family: cursive;
+}
+.contact-container {
+    background: #f8f3ea;
+    border: 10px solid #ffeecc;
+    width: auto;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+}
+.contact-input {
+    border-radius: 10px;
+    margin: 20px;
 }
